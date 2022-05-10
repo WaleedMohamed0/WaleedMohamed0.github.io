@@ -2,6 +2,9 @@ body
 {
     background-image: url('images/bg-desktop-light.jpg');
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-color: #DDD;
     font-family: Arial, Helvetica, sans-serif;
@@ -42,10 +45,14 @@ h2{
 
 .new_Task input
 {
-    border-radius: 3px;
-    padding: 6px;
+    padding: 6px;border: none;
     width: 29%;
     padding: 9px;
+}
+.new_Task input:focus
+{
+    border: none;
+    outline:none;
 }
 .new_Task button
 {
