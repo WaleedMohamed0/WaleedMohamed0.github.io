@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>TODO</title>
+</head>
+<body>
+    <div style="position: relative;height: 40px;width: 100%;">
+        <h2>TODO</h2>
+    </div>
+    <div style="position: relative;height: 40px;">
+         <img src="images/icon-moon.svg" style="cursor: pointer;" id = "moon">
+    </div>
+    <div class="new_Task">
+        <input type="text" placeholder="Create a new todo..." id = "addTaskInputID">
+        <button type="button" id="addBtn">Add</button>
+   </div>
+    <div class="container" id = "containerID">
+        <div class="tasks_Space" id = "tasks_SpaceID"><p id = "noTasksId">You don't have any task, Please add one..</p></div>
+        <button type="button" id="clearCompleted">Clear Completed</button>
+        <span id="count"></span>
+        <button type="button" id="All">All</button>
+        <button type="button" id="Active">Active</button>
+        <button type="button" id="completed">Completed</button>
+
+    </div>
+    <footer id = "FooterID">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a> Coded by <b style="color: red;">Waleed Mohamed.</b></footer>
+    <script src="tasks.js"></script>
+</body>
+</html>
